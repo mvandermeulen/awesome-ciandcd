@@ -2,7 +2,7 @@
 
 **Continuous Integration and Continuous Delivery**
 
-Written by [ciandcd.com](http://www.ciandcd.com)  
+Written by [cicdops.com](http://www.cicdops.com)  
 
 A curated list of awesome tools for:   
 continuous integration  
@@ -28,6 +28,7 @@ devops
 - [Deploy](#deploy)
 - [Delivery](#delivery)
 - [Provisioning Tools](#provisioning-tools)
+- [secure-tools](#secure-tools)
 - [Web Server](#web-server)
 - [Applications And Container](#applications-and-container)
 - [OS And Shell](#os-and-shell)
@@ -52,7 +53,7 @@ The theory for continuous integration and continuous deliver
 The system for software build and release, continuous integration and continuous delivery  
 * [Jenkins](http://jenkins-ci.org)  An extendable open source continuous integration server  
 * [Solano CI](https://www.solanolabs.com)  Faster Continuous Integration and Deployment with patented auto-parallelization. See results 10 to 80x faster. 14-day free trial. No credit card required.
-* [Concourse](https://concourse.ci) Rather than a myriad of checkboxes, pipelines are defined as a single declarative config file
+* [Concourse](https://concourse-ci.org) Rather than a myriad of checkboxes, pipelines are defined as a single declarative config file
 * [BuildForge](https://jazz.net/downloads/rational-build-forge/)  Automate and accelerate build and release processes  
 * [ElectricFlow](http://electric-cloud.com/products/electricflow/)  ElectricFlow/ElectricCommander gives distributed teams shared control and visibility into infrastructure, tool chains and processes. It accelerates and automates the software delivery process to enable agility, predictability and security across many build-test-deploy pipelines  
 * [Teamcity](http://www.jetbrains.com/teamcity/index.html)  Ready to work, extensible  
@@ -73,10 +74,14 @@ and developer-friendly build server out of the box
 * [pulse](http://zutubi.com) no free version.  
 * [PHP Censor](https://github.com/php-censor/php-censor) Open source self-hosted continuous integration server for PHP projects.  
 * [rundeck](http://rundeck.org) Rundeck features fine-grain access controls, a built-in job scheduler, and the ability to define workflows that dispatch commands and scripts to your nodes.  
-* [cds](https://ovh.github.io/cds) CDS is an Enterprise-Grade Continuous Delivery & DevOps Automation Platform written in Go(lang).  
+* [cds](https://ovh.github.io/cds) CDS is an Enterprise-Grade Continuous Delivery & DevOps Automation Platform written in Go(lang).
+* [Drone CI](https://drone.io/) Drone is a Continuous Delivery system built on container technology. Drone uses a simple YAML configuration file, a superset of docker-compose, to define and execute Pipelines inside Docker containers.  
+* [Luigi](https://github.com/spotify/luigi) Luigi is a Python module that helps you build complex pipelines of batch jobs. It handles dependency resolution, workflow management, visualization etc. It also comes with Hadoop support built in.  
+* [Kraken CI](https://kraken.ci) Kraken CI is a modern CI/CD, open-source, on-premise system that is highly scalable and focused on testing.  
 
 ## Online Build System
 Online build release system  
+* [appcircle.io](https://appcircle.io) — Automated mobile CI/CD/CT for iOS and Android with online device emulators.
 * [closeheat](http://closeheat.com) Static website integration with GitHub and Cloud development environment
 * [travis-ci](https://travis-ci.org) ci server for github and bitbuckets  
 * [cloudbees](https://www.cloudbees.com/) the Enterprise Jenkins Company  
@@ -101,12 +106,15 @@ Online build release system
 * [flow.ci](https://flow.ci/) - flow.ci, hosted continuous integration and delivery service for innovators who shape the future.
 * [Bitrise](https://www.bitrise.io/)  Cloud based continuous integration and delivery for mobile, free for OSS  
 * [Cirrus CI](https://cirrus-ci.org) Free for open source, supports Linux, Windows, macOS and FreeBSD, flexible hosted CI service  
-* [semaphoreci](https://semaphoreci.com) The continuous integration and delivery platform powering the world’s best engineering teams  
+* [DeployPlace](https://deployplace.com) - Complex deployments become simple. Deploy your applications from git or CI in minutes.
+* [Buildkite](https://buildkite.com) - Lightning fast testing and delivery for all your software projects
 
 
 ## Monitoring
 Tools for monitoring the status continuous integration and continuous delivery  
 * [CatLight](https://catlight.io)  Build status monitor for Jenkins, TeamCity, Travis CI, Appveyor and TFS
+* [Barklarm](https://www.barklarm.com/)  Open Source multiplatform alarm munitor and build status of servers that support of CCTray Specification and Github Actions.
+* [CCMenu](http://ccmenu.org/)  OSx build status monitor for servers tha support CCTray Specification.
 
 ## Infrastructure
 The hardware,virtual machines, fram management, docker  
@@ -122,6 +130,7 @@ The hardware,virtual machines, fram management, docker
 
 ## Dev env
 * [boxstarter](http://boxstarter.org/) Repeatable, reboot resilient windows environment installations made easy using Chocolatey packages.  
+* [T.A.D.S. boilerplate](https://github.com/Thomvaill/tads-boilerplate) A boilerplate to setup a Docker Swarm environment with Ansible
 * [vagrantup](https://www.vagrantup.com/)  Create and configure lightweight, reproducible, and portable development environments.  
 * [veewee](https://github.com/jedi4ever/veewee) Easing the building of vagrant boxes  
 
@@ -217,6 +226,7 @@ The tools for web site deploy
 * [xl-deploy](https://xebialabs.com/products/xl-deploy)  Agentless, Model-based App Deployment  
 * [Jenkinsdeployplugin](https://wiki.jenkins-ci.org/display/JENKINS/Deploy%20Plugin)   deploy to tomcat  
 * [bintray](https://bintray.com)  The fastest and most reliable way to automate the distribution of your software releases  
+* [Gitploy](https://www.gitploy.io/) Build the deployment system around GitHub in minutes
 
 ## Delivery
 The tools for software delivery  
@@ -233,7 +243,14 @@ Provision tools
 * [Ansible](http://www.ansible.com) Simple infrastructure management tool via human readable playbooks
 * [Puppet]() Build, destroy and rebuild servers on any public or private cloud  
 * [Chef](https://www.chef.io/chef/)  Fast, scalable and flexible software for data center automation  
-* [SaltStack](http://saltstack.com/community/) Radically simple configuration-management, application deployment, task-execution, and multi-node orchestration engine
+* [SaltStack](http://saltstack.com/community/) Radically simple configuration-management, application deployment, task-execution, and multi-node orchestration engine  
+* [terraform](https://www.terraform.io) Use Infrastructure as Code to provision and manage any cloud, infrastructure, or service  
+
+## secure tools
+Secure tools
+* [Deepfence Enterprise](https://deepfence.io) - Full life cycle Cloud Native Workload Protection platform for kubernetes, virtual machines and serverless.
+* [Deepfence Threat Mapper](https://github.com/deepfence/ThreatMapper) - Powerful runtime vulnerability scanner for kubernetes, virtual machines and serverless.
+* [whitesource](https://www.whitesourcesoftware.com/) The simplest way to secure and manage open source components in your software.  
 
 ## Web Server
 Common used web server  
@@ -260,7 +277,7 @@ VM application and container
 Database version control system  
 * [liquibase](http://www.liquibase.org) source control for your database  
 * [flywaydb](http://flywaydb.org) Database Migrations Made Easy  
-* [nextep](http://www.nextep-softwares.com) NeXtep Softwares provides software solutions for the industrialization of your database developments and deployments. Our goal is to increase the productivity of your development teams by taking control of your developments' lifecycle and by automating your deployment and test processes  
+* [Rumba RDBM](https://www.dbinvent.com/) Database migration tool, plain-SQL, and declarative definition supported.
 * [dbdeploy](http://dbdeploy.com) dbdeploy is a Database Change Management tool. It’s for developers or DBAs who want to evolve their database design – or refactor their database – in a simple, controlled, flexible and frequent manner   
 * [dbmaestro](http://www.dbmaestro.com/)  Controlled Database Continuous Delivery is Our Business  
 
@@ -276,6 +293,9 @@ Conference and submit
 ## Books
 * [Securing DevOps](https://manning.com/books/securing-devops?a_aid=securingdevops&a_bid=1353bcd8) - A book on utilizing CI/CD techniques to improve the security of web applications and their infrastructure.
 * [Learning Continuous Integraion with TeamCity](https://www.packtpub.com/web-development/learning-continuous-integration-teamcity-raw) - Master the principles and practices behind Continuous Integration by setting it up for different technology stacks using TeamCity
+* [Pipeline as Code](https://www.manning.com/books/pipeline-as-code) - A book on building CI/CD pipelines with Jenkins for cloud-native applications (including K8s & Serverless apps).
+* [Continuous Delivery for Kubernetes](https://www.manning.com/books/continuous-delivery-for-kubernetes) - Take the fast track in your journey to continuous delivery, with open source tools for Kubernetes and cloud applications
+* [Continuous Delivery in Go](https://www.manning.com/books/continuous-delivery-in-go) - Book that shows you how to build pipelines that optimize your development process so you can deliver software seamlessly to production.
 
 ## Other Awesome Lists
 Other amazingly awesome lists can be found in  
@@ -287,6 +307,8 @@ Other amazingly awesome lists can be found in
 * [ci tools compare2](https://github.com/ciandcd/Continuous-Integration-services/blob/master/continuous-integration-services-list.md)
 * [ci tools compare 3](https://github.com/ligurio/Continuous-Integration-services)
 * [awesome-docker](https://github.com/veggiemonk/awesome-docker)  
+*[awesome-cicd](https://github.com/awsomecicd/awesomecicd.git)
+
 
 ## Contact
 Welcome To add new items about continuous integration and continuous delivery.  
